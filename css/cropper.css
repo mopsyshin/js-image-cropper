@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+}
+#wrapper-cropper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+#img-input {
+  display: none;
+}
+label.upload {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  border-radius: 30px;
+  background-color: rgba(70,147,255,1);
+  color: #fff;
+  cursor: pointer;
+}
+#cropper-overay {
+  background-color: rgba(0,0,0,0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#crop-area {
+  position: absolute;
+  background-color: rgba(255,255,255,0.2);
+  overflow: hidden;
+  border: 1px solid rgba(70,147,255,1);
+  cursor: move;
+}
+#crop-area-image {
+  position: absolute;
+}
+.wrapper-button {
+  padding: 16px 0px;
+  text-align: right;
+}
+#dim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  display: none;
+}

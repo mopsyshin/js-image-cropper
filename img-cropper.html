@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>cropper</title>
+  <link rel="stylesheet" href="./css/cropper.css">
+</head>
+<body>
+  <h1>Image cropper</h1>
+  <label class="upload" for="img-input">Upload Image</label>
+  <input type="file" id="img-input">
+  <div id="dim"></div>
+  <div id="wrapper-cropper">
+    <img src="#" id="preview">
+    <div id="cropper-overay"></div>
+    <div id="crop-area">
+      <img id="crop-area-image" src="" alt="">
+    </div>
+    <div class="wrapper-button">
+      <button id="btn-cancel-crop">취소</button>
+      <button id="btn-size-cal">완료</button>
+    </div>
+  </div>
+  <script src="./js/jquery-1.12.3.min.js"></script>
+  <script src="./js/cropper.js"></script>
+</body>
+</html>
