@@ -1,0 +1,66 @@
+#cropper #wrapper-cropper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 60px;
+}
+#cropper #cropper-overlay {
+  background-color: rgba(0,0,0,0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#cropper #crop-area {
+  position: absolute;
+  background-color: rgba(255,255,255,0.2);
+  overflow: hidden;
+  border: 1px solid rgba(70,147,255,1);
+  cursor: move;
+}
+#cropper #resize-handler {
+  width: 6px;
+  height: 6px;
+  border: 1px solid rgba(70,147,255,1);
+  background-color: #fff;
+  cursor: nwse-resize;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#cropper #crop-area-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#cropper .wrapper-button {
+  padding: 16px 0px;
+  text-align: right;
+}
+#cropper .wrapper-button button {
+  width: 80px;
+  height: 36px;
+  background-color: rgba(70,147,255,1);
+  border: none;
+  color: #fff;
+  border-radius: 48px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+#cropper .wrapper-button button#btn-cancel-crop {
+  background-color: transparent;
+}
+#cropper #dim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+}
+#cropper #wrapper-preview {
+  width: 700px;
+}
+#cropper #wrapper-preview #preview {
+  width: 100%;
+}
