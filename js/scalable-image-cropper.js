@@ -282,18 +282,20 @@ function setEventListner() {
     }
     console.log(cropCoordinates);
     // 완료 후 닫기
-    $('#wrapper-cropper').css({'display' : 'none'});
-    $('#dim').css({'display' : 'none'});
-    
+    destroyCropper();
     return cropCoordinates;
   });
   
   $('#btn-cancel-crop').click(function(){
-    var cell = $(frame)[0]; 
-    while ( cell.hasChildNodes() ) { 
-      cell.removeChild( cell.firstChild ); 
-    }
+    destroyCropper();
   });
+
+function destroyCropper() {
+  var cell = $(frame)[0]; 
+  while ( cell.hasChildNodes() ) { 
+    cell.removeChild( cell.firstChild ); 
+  }
+}
 
   p = document.getElementById('crop-area');
   $('#resize-handler').mousedown(function(e){
