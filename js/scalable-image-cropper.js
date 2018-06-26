@@ -282,8 +282,10 @@ function setEventListner() {
     }
     console.log(cropCoordinates);
     // 완료 후 닫기
-    // $('#wrapper-cropper').css({'display' : 'none'});
-    // $('#dim').css({'display' : 'none'});
+    $('#wrapper-cropper').css({'display' : 'none'});
+    $('#dim').css({'display' : 'none'});
+    
+    return cropCoordinates;
   });
   
   $('#btn-cancel-crop').click(function(){
