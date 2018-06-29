@@ -28,10 +28,12 @@
 ##### js
 
 ```js
-cropper('#img-input', '#cropper' ,{
-    // Set Crop Size
-	cropWidth : 400,
-	cropHeight: 500
+$('#img-input').click(function(){
+    var cropA = new Cropper('#img-input', '#cropper' ,{
+        // set crop size
+        cropWidth : 400,
+        cropHeight: 500
+    });
 });
 ```
 

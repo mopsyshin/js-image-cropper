@@ -36,21 +36,21 @@
   <script src="./js/scalable-image-cropper.js"></script>
   <script>
     $('#img-input').click(function(){
-      cropper('#img-input', '#cropper' ,{
+      var cropA = new Cropper('#img-input', '#cropper' ,{
         cropWidth : 400,
         cropHeight: 500
       });
     });
     $('#img-input2').click(function(){
-      cropper('#img-input2', '#cropper' ,{
-        cropWidth : 700,
-        cropHeight: 400
+      var cropB = new Cropper('#img-input2', '#cropper' ,{
+        cropWidth : 400,
+        cropHeight: 500
       });
     });
     $('#img-input3').click(function(){
-      cropper('#img-input3', '#cropper' ,{
-        cropWidth : 300,
-        cropHeight: 300
+      var cropC = new Cropper('#img-input3', '#cropper' ,{
+        cropWidth : 400,
+        cropHeight: 500
       });
     });
   </script>
